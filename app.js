@@ -10,7 +10,7 @@ var users = require('./routes/users');
 var map = require('./routes/amap');
 var mapObject=require('./routes/mapObject');
 var app = express();
-var save= require('./routes/savefuntion');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,12 +32,19 @@ app.use('/users', users);
 //app.use('/javascripts',express.static('public/javascripts'));//#########
 app.use('/map',map);
 app.use('/mapObject',mapObject);
-app.use('/get_data',save);
-/*app.post('/mapObject',urlencodedParser,function (req,res) {
+//app.use('/get_data',save);
+// create application/x-www-form-urlencoded parser
+//var query = require('/');
+var query= require('./query.js');
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+app.post('/get_data',urlencodedParser,function (req,res) {
     //var n=JSON.parse(req.body);
-    console.log("supun :",req.body[0].x);
-    //res.render('test',{xx:req.body}
-} );*/
+    console.log("xxxx :",req.body);
+    var x=req.body;
+    query.data.connection(x);
+  //  var obj = JSON.parse(req.x);
+
+} );
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -77,15 +77,11 @@ function initMap() {
 }
 
 function saveLocation(){
-    var test =[
-        { x:"elehant"},
-        {y:"tiger"}
-    ];
+
     console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-    var x
+
     var http = new XMLHttpRequest();
     var url = "/get_data";
-    var params = "data data data ";
     http.open("POST", url, true);
 //Send the proper header information along with the request
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -94,7 +90,7 @@ function saveLocation(){
             alert(http.responseText);
         }
     }
-    http.send(test);
+    http.send(JSON.stringify("supunxx"));
    // console.log("save",objectOfLocation[0].length);
     console.log("supun",objectOfLocation[0].x1,objectOfLocation[0].x2,objectOfLocation[0].y1,objectOfLocation[0].y2);
     console.log("szaax",objectOfLocation[1].x1,objectOfLocation[1].x2,objectOfLocation[1].y1,objectOfLocation[1].y2);

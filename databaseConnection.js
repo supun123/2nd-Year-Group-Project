@@ -2,7 +2,7 @@ var mysql = require('mysql');
 
 
 var methods = {
-    addData: function connection() {
+    connection: function connection() {
         var con = mysql.createConnection({
             host: "localhost",
             user: "root",
@@ -11,12 +11,12 @@ var methods = {
         });
         con.connect(function (err) {
             if (err) throw err;
-            console.log("Connected!");
+            console.log("Database Connected!");
             //var sql = "INSERT INTO customers (name, address) VALUES ('" + Fname + "', '" + Lname + "')";
             //con.query(sql, function (err, result) {
             //  if (err) throw err;
             //console.log("1 record inserted");
-            //});
+
         });
         return con;
     }
