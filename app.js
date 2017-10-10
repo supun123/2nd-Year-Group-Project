@@ -36,8 +36,8 @@ app.use('/mapObject',mapObject);
 // create application/x-www-form-urlencoded parser
 //var query = require('/');
 var query= require('./query.js');
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
-app.post('/get_data',urlencodedParser,function (req,res) {
+//var urlencodedParser = bodyParser.urlencoded({ extended: false })
+app.post('/get_data',function (req,res) {
     //var n=JSON.parse(req.body);
     console.log("xxxx :",req.body);
     var x=req.body;

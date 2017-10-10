@@ -79,19 +79,17 @@ function initMap() {
 function saveLocation(){
 
     console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-
-    var http = new XMLHttpRequest();
-    var url = "/get_data";
-    http.open("POST", url, true);
-//Send the proper header information along with the request
-    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    http.onreadystatechange = function() {//Call a function when the state changes.
-        if(http.readyState == 4 && http.status == 200) {
-            alert(http.responseText);
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // document.getElementById("demo").innerHTML = this.responseText;
         }
-    }
-    http.send(JSON.stringify("supunxx"));
-   // console.log("save",objectOfLocation[0].length);
+    };
+    xhttp.open("POST", "/get_data", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify(objectOfLocation));
+
+
     console.log("supun",objectOfLocation[0].x1,objectOfLocation[0].x2,objectOfLocation[0].y1,objectOfLocation[0].y2);
     console.log("szaax",objectOfLocation[1].x1,objectOfLocation[1].x2,objectOfLocation[1].y1,objectOfLocation[1].y2);
     //query.data.saveLocationOfFence(objectOfLocation) ;
