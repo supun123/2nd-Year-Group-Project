@@ -18,7 +18,7 @@ var methods = {
         console.log("AAA");
         for (i in myObj) {
             console.log("Azz",myObj[0].x,myObj[0].y);
-            
+
             var sql="INSERT INTO `elephant`(`x`, `y`) VALUES ("+ myObj[i].x +","+myObj[i].y +")";
             con.query(sql, function (err, result) {
                 if (err) throw err;
