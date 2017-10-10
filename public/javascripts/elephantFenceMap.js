@@ -86,7 +86,7 @@ function saveLocation(){
            // document.getElementById("demo").innerHTML = this.responseText;
         }
     };
-    xhttp.open("POST", "/get_data", true);
+    xhttp.open("POST", "/fenceLocation", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(objectOfLocation));
 

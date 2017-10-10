@@ -36,11 +36,19 @@ app.use('/elephantLocations',elephantLocations);
 
 var query= require('./query.js');
 
-app.post('/get_data',function (req,res) {
+app.post('/fenceLocation',function (req,res) {
 
     console.log("xxxx :",req.body);
     var x=req.body;
-    query.data.connection(x);
+    query.data.addLocationOfFence(x);
+
+
+} );
+app.post('/allElephentLocations',function (req,res) {
+
+    console.log("allElephentLocations :",req.body);
+    var x=req.body;
+    query.data.addElephantLocation(x);
 
 
 } );
