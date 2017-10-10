@@ -7,8 +7,9 @@ var bodyParser = require('body-parser');
 var supun=require('./supun');
 var index = require('./routes/index');
 var users = require('./routes/users');
-var map = require('./routes/amap');
+var elephantFenceMap = require('./routes/elephantFenceMap');
 var mapObject=require('./routes/mapObject');
+var elephantLocations=require('./routes/routesElephantsLocations');
 var app = express();
 
 
@@ -28,21 +29,19 @@ app.use(express.static(path.join(__dirname, 'public')));//######################
 
 app.use('/', index);
 app.use('/users', users);
-//app.use('/stylesheets',express.static('public/stylesheets'));//#########
-//app.use('/javascripts',express.static('public/javascripts'));//#########
-app.use('/map',map);
+
+app.use('/elephantFenceMap',elephantFenceMap);
 app.use('/mapObject',mapObject);
-//app.use('/get_data',save);
-// create application/x-www-form-urlencoded parser
-//var query = require('/');
+app.use('/elephantLocations',elephantLocations);
+
 var query= require('./query.js');
-//var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
 app.post('/get_data',function (req,res) {
-    //var n=JSON.parse(req.body);
+
     console.log("xxxx :",req.body);
     var x=req.body;
     query.data.connection(x);
-  //  var obj = JSON.parse(req.x);
+
 
 } );
 

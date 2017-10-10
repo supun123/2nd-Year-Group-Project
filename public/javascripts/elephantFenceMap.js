@@ -62,6 +62,7 @@ function initMap() {
 
     });
 
+
     function calcRoute(source, destination) {
         var polyline = new google.maps.Polyline({
             path: [source, destination],
