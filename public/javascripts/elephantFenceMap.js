@@ -62,6 +62,7 @@ function initMap() {
 
     });
 
+
     function calcRoute(source, destination) {
         var polyline = new google.maps.Polyline({
             path: [source, destination],
@@ -85,7 +86,7 @@ function saveLocation(){
            // document.getElementById("demo").innerHTML = this.responseText;
         }
     };
-    xhttp.open("POST", "/get_data", true);
+    xhttp.open("POST", "/fenceLocation", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(objectOfLocation));
 
