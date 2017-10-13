@@ -53,6 +53,23 @@ app.post('/allElephentLocations',function (req,res) {
 
 } );
 
+app.get('/databse',function (req,res) {
+    //due to asynchronous running javascript in nodejs i could not add sql query to query file
+
+    var con=query.data.getLocations();
+    con.query("SELECT `*` FROM `elephant`",function callback(err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+        res.send(JSON.stringify(result) );
+      //  res=JSON.stringify(result);
+
+    });
+   // console.log(x);
+
+
+
+} );
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

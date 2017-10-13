@@ -10,7 +10,7 @@ function initialize() {
         center: {lat: 6.902096, lng: 79.860561},
         mapTypeId: 'terrain'
     });
-
+    getdata(map);
     // This event listener calls addMarker() when the map is clicked.
     google.maps.event.addListener(map, 'click', function(event) {
 
@@ -53,5 +53,26 @@ function saveLocation(){
 
 
 
+}
+function getdata(map) {
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // var  parser = new JSONParser();
+            //JSONObject jsnobject = new JSONObject();
+           // JSONArray jsonArray = new JSONArray(this.responseText);
+
+            var locations=JSON.parse(this.responseText);
+            document.getElementById("demo").innerHTML =locations[0].x;
+            for (i in locations) {
+                console.log("zz",locations[i].x,locations[i].y);
+                var myLatlng = new google.maps.LatLng(locations[i].x,locations[i].y);
+                addMarker(myLatlng,map);
+            }
+        }
+    };
+    xhttp.open("GET", "/databse", true);
+    xhttp.send("aaaa");
 }
 google.maps.event.addDomListener(window, 'load', initialize);

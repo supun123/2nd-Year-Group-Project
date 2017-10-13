@@ -25,8 +25,14 @@ var methods = {
                console.log(" Elephant record inserted");
             })
         }
-    }
+    },
+    getLocations: function getLocations() {
 
+
+
+        //console.log(res);
+        return(con);
+    }
     };
 
 
