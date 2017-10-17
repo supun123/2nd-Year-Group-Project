@@ -1,6 +1,6 @@
 // In the following example, markers appear when the user clicks on the map.
 // Each marker is labeled with a single alphabetical character.
-var sel=0;
+
 var labelIndex = 0;
 var allElephentLocations = [];
 function initialize() {
@@ -13,12 +13,21 @@ function initialize() {
     getElephantLocation(map);
     getFenceData(map);
     // This event listener calls addMarker() when the map is clicked.
-    if(sel==0){
+
         google.maps.event.addListener(map, 'click', function(event) {
             addMarker(event.latLng, map);
         });
-    }
-    else{console.log("AAAABBBBCCC");}
+    var marker = new google.maps.Marker({
+        map: map,
+        draggable: true,
+        position: results[0].geometry.location
+
+    });
+    google.maps.event.addListener(marker, "rightclick", function (point) { id = this.__gm_id; delMarker(id) });
+}
+
+
+
 
 //create a elephant fence for given location in the map
     function calcRoute(source, destination) {
@@ -96,9 +105,5 @@ function getElephantLocation(map) {
     xhttp.open("GET", "/getElephanLocations", true);
     xhttp.send("aaaa");
 }
-function select() {
-    sel=1;
-    initialize();
 
-}
 google.maps.event.addDomListener(window, 'load', initialize);
