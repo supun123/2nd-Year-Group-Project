@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="609c3b1d-c891-4fe8-8523-07eaa0542ba3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/elephantFenceMap.js" afterPath="$PROJECT_DIR$/public/javascripts/elephantFenceMap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/elephantLocations.js" afterPath="$PROJECT_DIR$/public/javascripts/elephantLocations.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/elephantFenceMap.ejs" afterPath="$PROJECT_DIR$/views/elephantFenceMap.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/elephantLocations.ejs" afterPath="$PROJECT_DIR$/views/elephantLocations.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,8 +65,8 @@
       <file leaf-file-name="elephantLocations.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/elephantLocations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="453">
+              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initialize#0" expanded="false" />
@@ -77,18 +75,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elephantFenceMap.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="elephantFenceMap.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/elephantFenceMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="139" column="13" lean-forward="false" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+            <state relative-caret-position="43">
+              <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
               <folding>
-                <element signature="n#!!block;n#initMap#0" expanded="false" />
                 <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
                 <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-                <element signature="e#1414#2963#0" expanded="false" />
+                <element signature="e#1426#2975#0" expanded="false" />
                 <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-                <element signature="n#!!block;n#saveLocation#0" expanded="false" />
                 <element signature="n#!!block;n#addMarker#0" expanded="false" />
                 <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
               </folding>
@@ -106,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elephantFenceMap.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="elephantFenceMap.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/elephantFenceMap.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="425">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -188,8 +184,8 @@
         <option value="$PROJECT_DIR$/query.js" />
         <option value="$PROJECT_DIR$/views/elephantLocations.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/elephantLocations.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/elephantFenceMap.js" />
         <option value="$PROJECT_DIR$/views/elephantFenceMap.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/elephantFenceMap.js" />
       </list>
     </option>
   </component>
@@ -205,7 +201,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="894" />
+    <option name="y" value="301" />
     <option name="width" value="976" />
     <option name="height" value="1050" />
   </component>
@@ -333,12 +330,12 @@
       <workItem from="1507574680466" duration="6437000" />
       <workItem from="1507619684263" duration="17410000" />
       <workItem from="1507894250299" duration="17191000" />
-      <workItem from="1508232979413" duration="10561000" />
+      <workItem from="1508232979413" duration="11633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165863000" />
+    <option name="totallyTimeSpent" value="166935000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,12 +387,10 @@
         <state relative-caret-position="1750">
           <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#initMap#0" expanded="false" />
             <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
             <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="e#1414#2963#0" expanded="false" />
+            <element signature="e#1426#2975#0" expanded="false" />
             <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#saveLocation#0" expanded="false" />
             <element signature="n#!!block;n#addMarker#0" expanded="false" />
             <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
           </folding>
@@ -429,12 +424,10 @@
         <state relative-caret-position="300">
           <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="51" />
           <folding>
-            <element signature="n#!!block;n#initMap#0" expanded="false" />
             <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
             <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="e#1414#2963#0" expanded="false" />
+            <element signature="e#1426#2975#0" expanded="false" />
             <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#saveLocation#0" expanded="false" />
             <element signature="n#!!block;n#addMarker#0" expanded="false" />
             <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
           </folding>
@@ -730,17 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantLocations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initialize#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/elephantLocations.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -749,28 +731,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantFenceMap.js">
+    <entry file="file://$PROJECT_DIR$/views/elephantFenceMap.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="139" column="13" lean-forward="false" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantLocations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
-            <element signature="n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="e#1414#2963#0" expanded="false" />
-            <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#saveLocation#0" expanded="false" />
-            <element signature="n#!!block;n#addMarker#0" expanded="false" />
-            <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initialize#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/elephantFenceMap.ejs">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantFenceMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="43">
+          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
+            <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
+            <element signature="e#1426#2975#0" expanded="false" />
+            <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
+            <element signature="n#!!block;n#addMarker#0" expanded="false" />
+            <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

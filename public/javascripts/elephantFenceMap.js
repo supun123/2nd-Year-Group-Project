@@ -3,7 +3,7 @@
 // Brisbane, Australia.
 //var query=require('../../query');
 var objectOfLocation = [];//take location Object in this array
-var select =0;
+var select ="fence";
 var allElephentLocations = [];
 function initMap() {
 
@@ -34,7 +34,7 @@ function initMap() {
         polyline.setMap(map);
     }
     var objectLocation=new location(null,null,null,null);//create object of location function
-    if(select==0) {
+    if(select=="fence") {
         console.log("fence");
         google.maps.event.addListener(map, 'click', function (e) {
             if (x == 1) { //console.log(x,"Aza");
@@ -65,7 +65,7 @@ function initMap() {
 
 
         });
-    }else {
+    }else if(select=="location"){
         console.log("elephant locations");
         google.maps.event.addListener(map, 'click', function(event) {
             addMarker(event.latLng, map);
@@ -95,17 +95,31 @@ function initMap() {
 
 }
 /*Save marked locations of the fence to the database*/
-function saveLocation(){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-        }
-    };
-    xhttp.open("POST", "/fenceLocation", true);
-    xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send(JSON.stringify(objectOfLocation));
-    console.log("supun",objectOfLocation[0].x1,objectOfLocation[0].x2,objectOfLocation[0].y1,objectOfLocation[0].y2);
-    console.log("szaax",objectOfLocation[1].x1,objectOfLocation[1].x2,objectOfLocation[1].y1,objectOfLocation[1].y2);
+function saveLocation() {
+    if (select=="fence") {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+            }
+        };
+        xhttp.open("POST", "/fenceLocation", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send(JSON.stringify(objectOfLocation));
+        console.log("supun", objectOfLocation[0].x1, objectOfLocation[0].x2, objectOfLocation[0].y1, objectOfLocation[0].y2);
+        console.log("szaax", objectOfLocation[1].x1, objectOfLocation[1].x2, objectOfLocation[1].y1, objectOfLocation[1].y2);
+    }
+    else if(select=="location"){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            }
+        };
+        xhttp.open("POST", "/allElephentLocations", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send(JSON.stringify(allElephentLocations));
+
+
+    }
 }
 
 // Adds a elephant locations  to the map.
@@ -137,8 +151,8 @@ function getElephantLocation(map) {
     xhttp.open("GET", "/getElephanLocations", true);
     xhttp.send("aaaa");
 }
-function xxxx() {
+function selectStat() {
     console.log("select function");
-    select=1;
+    select="location";
     initMap();
 }
