@@ -46,16 +46,9 @@ function initMap() {
             objectLocation.y2= e.latLng.lng();//put  location in numerical format
             console.log("A",objectLocation.y1,objectLocation.y2);//display location point of  click
             objectOfLocation.push(objectLocation);//put objectLocation to this array which will help to put data in to database
-
-            //console.log("objectOfLocation[][]",objectOfLocation[0].x1,objectOfLocation[0].x2,objectOfLocation[0].y1,objectOfLocation[0].y2);
-            //objectFencelLocation.push(fencelLocation);
             fencelLocation = [];
             objectLocation=new location(null,null,null,null);
-
-            //console.log("objectOfLocation[][]after",objectOfLocation[0].x1,objectOfLocation[0].x2,objectOfLocation[0].y1,objectOfLocation[0].y2);
-
             x = 0;
-
             document.getElementById("demo").innerHTML = e.latLng;
 
         }
@@ -81,14 +74,9 @@ function initMap() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                // var  parser = new JSONParser();
-                //JSONObject jsnobject = new JSONObject();
-                // JSONArray jsonArray = new JSONArray(this.responseText);
-
                 var locations=JSON.parse(this.responseText);
                 document.getElementById("demo").innerHTML =locations[0].x;
                 for (i in locations) {
-                    console.log("zz",locations[i].x1,locations[i].x2,locations[i].y1,locations[i].y2);
                     var p1 = new google.maps.LatLng(locations[i].x1,locations[i].x2);
                     var p2 = new google.maps.LatLng(locations[i].y1,locations[i].y2);
                     //     addMarker(myLatlng,map);
@@ -102,21 +90,16 @@ function initMap() {
 
 
 }
-
+/*Save marked locations of the fence to the database*/
 function saveLocation(){
-
-    console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-           // document.getElementById("demo").innerHTML = this.responseText;
         }
     };
     xhttp.open("POST", "/fenceLocation", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(objectOfLocation));
-
-
     console.log("supun",objectOfLocation[0].x1,objectOfLocation[0].x2,objectOfLocation[0].y1,objectOfLocation[0].y2);
     console.log("szaax",objectOfLocation[1].x1,objectOfLocation[1].x2,objectOfLocation[1].y1,objectOfLocation[1].y2);
 }
@@ -142,7 +125,6 @@ function getElephantLocation(map) {
         if (this.readyState == 4 && this.status == 200) {
             var locations=JSON.parse(this.responseText);
             for (i in locations) {
-                console.log("zz",locations[i].x,locations[i].y);
                 var myLatlng = new google.maps.LatLng(locations[i].x,locations[i].y);
                 addMarker(myLatlng,map);
             }

@@ -1,6 +1,5 @@
 // In the following example, markers appear when the user clicks on the map.
 // Each marker is labeled with a single alphabetical character.
-var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var labelIndex = 0;
 var allElephentLocations = [];
 function initialize() {
@@ -33,17 +32,11 @@ function initialize() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                // var  parser = new JSONParser();
-                //JSONObject jsnobject = new JSONObject();
-                // JSONArray jsonArray = new JSONArray(this.responseText);
-
                 var locations=JSON.parse(this.responseText);
                // document.getElementById("demo").innerHTML =locations[0].x;
                 for (i in locations) {
-                    console.log("zz",locations[i].x1,locations[i].x2,locations[i].y1,locations[i].y2);
                     var p1 = new google.maps.LatLng(locations[i].x1,locations[i].x2);
                     var p2 = new google.maps.LatLng(locations[i].y1,locations[i].y2);
-                    //     addMarker(myLatlng,map);
                     calcRoute(p1,p2);
                 }
             }
@@ -62,20 +55,17 @@ function addMarker(location, map) {
     allElephentLocations.push(elephantLocation);
     // Add the marker at the clicked location, and add the next-available label
     // from the array of alphabetical characters.
-    console.log(location.lat(),location.lng());
     var marker = new google.maps.Marker({
         position: location,
         label: 'E',
         map: map
     });
 }
+/*save marked locations of the Elephants */
 function saveLocation(){
-
-    console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            // document.getElementById("demo").innerHTML = this.responseText;
         }
     };
     xhttp.open("POST", "/allElephentLocations", true);
@@ -93,7 +83,6 @@ function getElephantLocation(map) {
         if (this.readyState == 4 && this.status == 200) {
             var locations=JSON.parse(this.responseText);
             for (i in locations) {
-                console.log("zz",locations[i].x,locations[i].y);
                 var myLatlng = new google.maps.LatLng(locations[i].x,locations[i].y);
                 addMarker(myLatlng,map);
             }
