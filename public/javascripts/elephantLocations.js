@@ -1,5 +1,6 @@
 // In the following example, markers appear when the user clicks on the map.
 // Each marker is labeled with a single alphabetical character.
+var sel=0;
 var labelIndex = 0;
 var allElephentLocations = [];
 function initialize() {
@@ -12,9 +13,13 @@ function initialize() {
     getElephantLocation(map);
     getFenceData(map);
     // This event listener calls addMarker() when the map is clicked.
-    google.maps.event.addListener(map, 'click', function(event) {
-        addMarker(event.latLng, map);
-    });
+    if(sel==0){
+        google.maps.event.addListener(map, 'click', function(event) {
+            addMarker(event.latLng, map);
+        });
+    }
+    else{console.log("AAAABBBBCCC");}
+
 //create a elephant fence for given location in the map
     function calcRoute(source, destination) {
         var polyline = new google.maps.Polyline({
@@ -90,5 +95,10 @@ function getElephantLocation(map) {
     };
     xhttp.open("GET", "/getElephanLocations", true);
     xhttp.send("aaaa");
+}
+function select() {
+    sel=1;
+    initialize();
+
 }
 google.maps.event.addDomListener(window, 'load', initialize);

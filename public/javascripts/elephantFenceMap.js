@@ -2,11 +2,9 @@
 // Kingsford Smith's first trans-Pacific flight between Oakland, CA, and
 // Brisbane, Australia.
 //var query=require('../../query');
-    var objectOfLocation = [];//take location Object in this array
-
-//var s=require('../../supun');
-//s.one("xsssf");
-//var su="zzz";
+var objectOfLocation = [];//take location Object in this array
+var select =0;
+var allElephentLocations = [];
 function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -36,37 +34,43 @@ function initMap() {
         polyline.setMap(map);
     }
     var objectLocation=new location(null,null,null,null);//create object of location function
+    if(select==0) {
+        console.log("fence");
+        google.maps.event.addListener(map, 'click', function (e) {
+            if (x == 1) { //console.log(x,"Aza");
+                var startPt = new google.maps.LatLng(e.latLng.lat(), e.latLng.lng());
+                fencelLocation.push(startPt);
+                calcRoute(fencelLocation[0], fencelLocation[1]);//using calcRoute funtion display map start point and end point of the fence
+                objectLocation.y1 = e.latLng.lat();//put  location in numerical format
+                objectLocation.y2 = e.latLng.lng();//put  location in numerical format
+                console.log("A", objectLocation.y1, objectLocation.y2);//display location point of  click
+                objectOfLocation.push(objectLocation);//put objectLocation to this array which will help to put data in to database
+                fencelLocation = [];
+                objectLocation = new location(null, null, null, null);
+                x = 0;
+                document.getElementById("demo").innerHTML = e.latLng;
 
-    google.maps.event.addListener(map, 'click', function (e) {
-        if (x == 1) { //console.log(x,"Aza");
-            var startPt = new google.maps.LatLng(e.latLng.lat(), e.latLng.lng());
-            fencelLocation.push(startPt);
-            calcRoute(fencelLocation[0], fencelLocation[1]);//using calcRoute funtion display map start point and end point of the fence
-            objectLocation.y1=e.latLng.lat();//put  location in numerical format
-            objectLocation.y2= e.latLng.lng();//put  location in numerical format
-            console.log("A",objectLocation.y1,objectLocation.y2);//display location point of  click
-            objectOfLocation.push(objectLocation);//put objectLocation to this array which will help to put data in to database
-            fencelLocation = [];
-            objectLocation=new location(null,null,null,null);
-            x = 0;
-            document.getElementById("demo").innerHTML = e.latLng;
+            }
+            else {
 
-        }
-        else {
+                var startPt = new google.maps.LatLng(e.latLng.lat(), e.latLng.lng());
+                objectLocation.x1 = e.latLng.lat();//put  location in numerical format
+                objectLocation.x2 = e.latLng.lng();//put  location in numerical format
+                console.log("B", objectLocation.x1, objectLocation.x2);//display in console, location of the click point
+                fencelLocation.push(startPt);//push google.maps.LatLng object
+                x++;
+                document.getElementById("demo").innerHTML = e.latLng;
 
-            var startPt = new google.maps.LatLng(e.latLng.lat(), e.latLng.lng());
-            objectLocation.x1=e.latLng.lat();//put  location in numerical format
-            objectLocation.x2= e.latLng.lng();//put  location in numerical format
-            console.log("B",objectLocation.x1,objectLocation.x2);//display in console, location of the click point
-            fencelLocation.push(startPt);//push google.maps.LatLng object
-            x++;
-            document.getElementById("demo").innerHTML = e.latLng;
-
-        }
+            }
 
 
-    });
-
+        });
+    }else {
+        console.log("elephant locations");
+        google.maps.event.addListener(map, 'click', function(event) {
+            addMarker(event.latLng, map);
+        });
+    }
 
 
     function getFenceData(map) {
@@ -109,9 +113,9 @@ function addMarker(location, map) {
     var elephantLocation = {x:0, y:0};
     elephantLocation.x=location.lat();
     elephantLocation.y=location.lng();
-    //allElephentLocations.push(elephantLocation);
+    allElephentLocations.push(elephantLocation);
     // Add the marker at the clicked location, and add the next-available label
-    // from the array of alphabetical characters.
+
   //  console.log(location.lat(),location.lng());
     var marker = new google.maps.Marker({
         position: location,
@@ -133,5 +137,8 @@ function getElephantLocation(map) {
     xhttp.open("GET", "/getElephanLocations", true);
     xhttp.send("aaaa");
 }
-
-
+function xxxx() {
+    console.log("select function");
+    select=1;
+    initMap();
+}
