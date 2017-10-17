@@ -52,24 +52,26 @@ app.post('/allElephentLocations',function (req,res) {
 
 
 } );
-
-app.get('/databse',function (req,res) {
+//get data from elephant table
+app.get('/getElephanLocations',function (req,res) {
     //due to asynchronous running javascript in nodejs i could not add sql query to query file
-
     var con=query.data.getLocations();
     con.query("SELECT `*` FROM `elephant`",function callback(err, result, fields) {
         if (err) throw err;
         console.log(result);
         res.send(JSON.stringify(result) );
-      //  res=JSON.stringify(result);
-
     });
-   // console.log(x);
-
-
-
-} );
-
+});
+//get data from fence location from location table
+app.get('/getFenceLocation',function (req,res) {
+    //due to asynchronous running javascript in nodejs i could not add sql query to query file
+    var con=query.data.getLocations();
+    con.query("SELECT `x1`, `x2`, `y1`, `y2` FROM `locations`",function callback(err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+        res.send(JSON.stringify(result) );
+    });
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

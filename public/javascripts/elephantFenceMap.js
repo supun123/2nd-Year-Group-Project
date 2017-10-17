@@ -14,6 +14,8 @@ function initMap() {
         center: {lat: 6.902096, lng: 79.860561},
         mapTypeId: 'terrain'
     });
+    getFenceData();
+    getElephantLocation(map);
     var x = 0;
     //var objectFencelLocation = [];
     var fencelLocation = [];//taking google.maps.LatLng objects which is help to mark fences in the map
@@ -22,6 +24,16 @@ function initMap() {
         this.x2=x2;
         this.y1=y1;
         this.y2=y2;
+    }
+    function calcRoute(source, destination) {
+        var polyline = new google.maps.Polyline({
+            path: [source, destination],
+            strokeColor: 'red',
+            strokeWeight: 2,
+            strokeOpacity: 1
+        });
+
+        polyline.setMap(map);
     }
     var objectLocation=new location(null,null,null,null);//create object of location function
 
@@ -63,15 +75,29 @@ function initMap() {
     });
 
 
-    function calcRoute(source, destination) {
-        var polyline = new google.maps.Polyline({
-            path: [source, destination],
-            strokeColor: 'red',
-            strokeWeight: 2,
-            strokeOpacity: 1
-        });
 
-        polyline.setMap(map);
+    function getFenceData(map) {
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // var  parser = new JSONParser();
+                //JSONObject jsnobject = new JSONObject();
+                // JSONArray jsonArray = new JSONArray(this.responseText);
+
+                var locations=JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML =locations[0].x;
+                for (i in locations) {
+                    console.log("zz",locations[i].x1,locations[i].x2,locations[i].y1,locations[i].y2);
+                    var p1 = new google.maps.LatLng(locations[i].x1,locations[i].x2);
+                    var p2 = new google.maps.LatLng(locations[i].y1,locations[i].y2);
+                    //     addMarker(myLatlng,map);
+                    calcRoute(p1,p2);
+                }
+            }
+        };
+        xhttp.open("GET", "/getFenceLocation", true);
+        xhttp.send("aaaa");
     }
 
 
@@ -93,10 +119,37 @@ function saveLocation(){
 
     console.log("supun",objectOfLocation[0].x1,objectOfLocation[0].x2,objectOfLocation[0].y1,objectOfLocation[0].y2);
     console.log("szaax",objectOfLocation[1].x1,objectOfLocation[1].x2,objectOfLocation[1].y1,objectOfLocation[1].y2);
-    //query.data.saveLocationOfFence(objectOfLocation) ;
+}
 
-
-
+// Adds a elephant locations  to the map.
+function addMarker(location, map) {
+    var elephantLocation = {x:0, y:0};
+    elephantLocation.x=location.lat();
+    elephantLocation.y=location.lng();
+    //allElephentLocations.push(elephantLocation);
+    // Add the marker at the clicked location, and add the next-available label
+    // from the array of alphabetical characters.
+  //  console.log(location.lat(),location.lng());
+    var marker = new google.maps.Marker({
+        position: location,
+        label:'E',
+        map: map
+    });
+}
+function getElephantLocation(map) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var locations=JSON.parse(this.responseText);
+            for (i in locations) {
+                console.log("zz",locations[i].x,locations[i].y);
+                var myLatlng = new google.maps.LatLng(locations[i].x,locations[i].y);
+                addMarker(myLatlng,map);
+            }
+        }
+    };
+    xhttp.open("GET", "/getElephanLocations", true);
+    xhttp.send("aaaa");
 }
 
 
