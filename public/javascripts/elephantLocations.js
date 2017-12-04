@@ -59,7 +59,7 @@ function initialize() {
         xhttp.send("aaaa");
     }
 
-}
+//}
 
 // Adds a elephant locations  to the map.
 function addMarker(location, map) {

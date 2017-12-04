@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var elephantFenceMap = require('./routes/elephantFenceMap');
 var mapObject=require('./routes/mapObject');
 var elephantLocations=require('./routes/routesElephantsLocations');
+var newAll=require('./routes/newAll');
 var app = express();
 
 
@@ -25,20 +26,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));//##########################
 
-//supun.supun(kavinda.s[0].x);
+
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/mapObject',mapObject);
 
 app.use('/elephantFenceMap',elephantFenceMap);
-app.use('/mapObject',mapObject);
 app.use('/elephantLocations',elephantLocations);
 
+app.use('/NewAll',newAll);
 var query= require('./query.js');
 
 app.post('/fenceLocation',function (req,res) {
 
-    console.log("xxxx :",req.body);
+    //console.log("xxxx :",req.body);
     var x=req.body;
     query.data.addLocationOfFence(x);
 
@@ -66,15 +68,15 @@ app.get('/getElephanLocations',function (req,res) {
 app.get('/getFenceLocation',function (req,res) {
     //due to asynchronous running javascript in nodejs i could not add sql query to query file
     var con=query.data.getLocations();
-    con.query("SELECT `x1`, `x2`, `y1`, `y2` FROM `locations`",function callback(err, result, fields) {
+    con.query("SELECT `fenceId`, `vertexId`, `lat`, `lng` FROM `fencelocation`",function callback(err, result, fields) {
         if (err) throw err;
-        console.log(result);
+        //console.log("check get",result);
         res.send(JSON.stringify(result) );
     });
 });
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+    var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
