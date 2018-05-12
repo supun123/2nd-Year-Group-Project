@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="609c3b1d-c891-4fe8-8523-07eaa0542ba3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/elephantLocations.js" afterPath="$PROJECT_DIR$/public/javascripts/elephantLocations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/elephantLocations.ejs" afterPath="$PROJECT_DIR$/views/elephantLocations.ejs" />
+    <list default="true" id="21b129b7-ef11-4b50-b33f-8333f5f93704" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/beamePluginConfig1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/uploadAudio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/uploadImage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/users.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/androidLogin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/makeRequest.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/uploadImages.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/viewRequest.ejs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/audio/audio1512547280465.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/database.js" afterPath="$PROJECT_DIR$/models/database.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/upload.js" afterPath="$PROJECT_DIR$/routes/upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/audio.ejs" afterPath="$PROJECT_DIR$/views/audio.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/upload.ejs" afterPath="$PROJECT_DIR$/views/upload.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,121 +41,93 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="test3" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="www" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fence.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/fence.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1908">
+              <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fence.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/fence.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="35" />
+            <state relative-caret-position="500">
+              <caret line="65" column="14" lean-forward="false" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="databaseConnection.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/databaseConnection.js">
+      <file leaf-file-name="elephant.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/elephant.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="325">
+              <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supun.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/supun.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/query.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="elephantLocations.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/elephantLocations.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="77" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="77" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#calcRoute#0" expanded="false" />
-                <element signature="n#!!block;n#getFenceData#0" expanded="false" />
-                <element signature="n#!!block;n#addMarker#0" expanded="false" />
-                <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="elephantFenceMap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/elephantFenceMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
-                <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-                <element signature="e#1426#2975#0" expanded="false" />
-                <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-                <element signature="n#!!block;n#addMarker#0" expanded="false" />
-                <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/error.ejs">
+      <file leaf-file-name="fence.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/fence.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elephantFenceMap.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/elephantFenceMap.ejs">
+      <file leaf-file-name="fence.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/fence.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="100">
+              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elephantLocations.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/elephantLocations.ejs">
+      <file leaf-file-name="signUp.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/signUp.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elephantLocationMap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/elephantLocationMap.css">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="975">
+              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -141,23 +139,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Stylus File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>calcRoute</find>
-      <find>arParth</find>
+      <find>requests</find>
+      <find>getElephantLocation</find>
+      <find>map</find>
+      <find>user</find>
+      <find>locatio</find>
+      <find>get</find>
+      <find>select</find>
+      <find>save</find>
       <find>fence</find>
-      <find>objectOfLocation</find>
-      <find>z</find>
-      <find>mapObject</find>
-      <find>app.use</find>
-      <find>body</find>
-      <find>objectLocation</find>
-      <find>demo</find>
+      <find>x</find>
+      <find>saveLocation</find>
+      <find>con</find>
+      <find>setFenceData</find>
+      <find>username</find>
+      <find>elephant</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,29 +167,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/routes/map.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/map.css" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/xx.js" />
-        <option value="$PROJECT_DIR$/routes/mapObject.js" />
-        <option value="$PROJECT_DIR$/views/test.ejs" />
-        <option value="$PROJECT_DIR$/supun.js" />
-        <option value="$PROJECT_DIR$/views/map.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/amap.js" />
-        <option value="$PROJECT_DIR$/routes/savefuntion.js" />
-        <option value="$PROJECT_DIR$/routes/amap.js" />
-        <option value="$PROJECT_DIR$/routes/routesElephantsLocations.js" />
+        <option value="$PROJECT_DIR$/models/database.js" />
+        <option value="$PROJECT_DIR$/routes/onlyView.js" />
+        <option value="$PROJECT_DIR$/routes/home.js" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
+        <option value="$PROJECT_DIR$/views/user.ejs" />
+        <option value="$PROJECT_DIR$/routes/request.js" />
+        <option value="$PROJECT_DIR$/models/elephantLocation.js" />
+        <option value="$PROJECT_DIR$/routes/androidLogin.js" />
+        <option value="$PROJECT_DIR$/models/fenceLocation.js" />
+        <option value="$PROJECT_DIR$/views/onlyView.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/onlyView.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/public/stylesheets/elephantLocationMap.styl" />
-        <option value="$PROJECT_DIR$/public/stylesheets/elephantLocationMap.css" />
-        <option value="$PROJECT_DIR$/databaseConnection.js" />
+        <option value="$PROJECT_DIR$/views/makeRequest.ejs" />
+        <option value="$PROJECT_DIR$/views/viewRequest.ejs" />
+        <option value="$PROJECT_DIR$/models/request.js" />
+        <option value="$PROJECT_DIR$/routes/upload.js" />
+        <option value="$PROJECT_DIR$/models/users.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/query.js" />
-        <option value="$PROJECT_DIR$/views/elephantFenceMap.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/elephantFenceMap.js" />
-        <option value="$PROJECT_DIR$/views/elephantLocations.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/elephantLocations.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/fence.js" />
+        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/models/queryA.js" />
+        <option value="$PROJECT_DIR$/models/dbConnection.js" />
+        <option value="$PROJECT_DIR$/routes/fence.js" />
+        <option value="$PROJECT_DIR$/routes/getElephant&amp;FenceLocations.js" />
+        <option value="$PROJECT_DIR$/routes/elephant.js" />
       </list>
     </option>
   </component>
@@ -204,8 +207,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="894" />
-    <option name="y" value="301" />
+    <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1050" />
   </component>
@@ -225,57 +227,70 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="test3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test3" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="test3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test3" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="test3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test3" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="test3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test3" type="462c0819:PsiDirectoryNode" />
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nodejs" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="javascript.nodejs.core.library.configured.version" value="8.4.0" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2017-9-28/test3" />
     <property name="ignore_missing_gitignore" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\group project\New folder\test\2017-9-6\test3" />
-      <recent name="G:\group project\New folder\test\2017-9-6\test3\routes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\group project\New folder\test\2017-9-6\test3\public\stylesheets" />
-      <recent name="G:\group project\New folder\test\2017-9-6\test3\routes\b" />
-    </key>
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,56 +304,77 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.bin\www" />
+  <component name="RunManager" selected="Node.js.www">
+    <configuration name="Unnamed" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <configuration name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="version" value="1" />
+        <option name="volumeBindings">
+          <list />
+        </option>
+      </EXTENSION>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="npm.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.www" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.www" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="609c3b1d-c891-4fe8-8523-07eaa0542ba3" name="Default" comment="" />
-      <created>1504678531566</created>
+      <changelist id="21b129b7-ef11-4b50-b33f-8333f5f93704" name="Default" comment="" />
+      <created>1512827594216</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1504678531566</updated>
-      <workItem from="1504678545655" duration="4335000" />
-      <workItem from="1504704684627" duration="15703000" />
-      <workItem from="1504866663905" duration="9814000" />
-      <workItem from="1505243243264" duration="7525000" />
-      <workItem from="1505288386217" duration="3347000" />
-      <workItem from="1505309378259" duration="4452000" />
-      <workItem from="1505363434745" duration="426000" />
-      <workItem from="1505508394375" duration="2045000" />
-      <workItem from="1505537771453" duration="7921000" />
-      <workItem from="1505751997768" duration="2658000" />
-      <workItem from="1505756274724" duration="5774000" />
-      <workItem from="1505895008669" duration="92000" />
-      <workItem from="1505905468409" duration="4906000" />
-      <workItem from="1505992008223" duration="647000" />
-      <workItem from="1506152365953" duration="5398000" />
-      <workItem from="1506159625307" duration="389000" />
-      <workItem from="1506161003757" duration="652000" />
-      <workItem from="1506161762182" duration="503000" />
-      <workItem from="1506162368914" duration="1184000" />
-      <workItem from="1506166868882" duration="110000" />
-      <workItem from="1506276828584" duration="45000" />
-      <workItem from="1506537347727" duration="294000" />
-      <workItem from="1506933467885" duration="5434000" />
-      <workItem from="1507280326398" duration="8716000" />
-      <workItem from="1507289241597" duration="19297000" />
-      <workItem from="1507539071488" duration="142000" />
-      <workItem from="1507539239741" duration="2455000" />
-      <workItem from="1507574680466" duration="6437000" />
-      <workItem from="1507619684263" duration="17410000" />
-      <workItem from="1507894250299" duration="17191000" />
-      <workItem from="1508232979413" duration="14203000" />
+      <updated>1512827594216</updated>
+      <workItem from="1512827596170" duration="5873000" />
+      <workItem from="1512839891342" duration="19557000" />
+      <workItem from="1512898120826" duration="3982000" />
+      <workItem from="1512907123605" duration="5675000" />
+      <workItem from="1512915105198" duration="35000" />
+      <workItem from="1512921354395" duration="11872000" />
+      <workItem from="1512943680530" duration="15613000" />
+      <workItem from="1512976415782" duration="1416000" />
+      <workItem from="1512980077062" duration="11152000" />
+      <workItem from="1512992615145" duration="687000" />
+      <workItem from="1512993498685" duration="5882000" />
+      <workItem from="1513002897112" duration="483000" />
+      <workItem from="1513003827716" duration="3692000" />
+      <workItem from="1513007707403" duration="1085000" />
+      <workItem from="1513016667899" duration="3127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169505000" />
+    <option name="totallyTimeSpent" value="90131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,24 +389,43 @@
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12427287" sideWeight="0.8245364" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21147357" sideWeight="0.50608146" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21147357" sideWeight="0.49391857" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13220519" sideWeight="0.17546362" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13220519" sideWeight="0.17546362" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15124273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.49814913" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5691789" sideWeight="0.17979905" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1136108" sideWeight="0.820201" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27446568" sideWeight="0.49814913" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.49814913" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10123734" sideWeight="0.17662613" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3048369" sideWeight="0.82337385" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.49814913" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17451084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -379,395 +434,378 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantFenceMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1750">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="e#1426#2975#0" expanded="false" />
-            <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#addMarker#0" expanded="false" />
-            <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantFenceMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="e#1426#2975#0" expanded="false" />
-            <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#addMarker#0" expanded="false" />
-            <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/databaseConnection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/elephantFenceMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/elephantFenceMap.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/elephantFenceMap.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/elephantFenceMap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/elephantFenceMap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/map.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11275">
-          <caret line="457" column="12" lean-forward="false" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="1000">
+          <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="350">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/8.4.0/core-modules/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="474" column="5" lean-forward="false" selection-start-line="474" selection-start-column="5" selection-end-line="474" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/routesElephantsLocations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/test.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/elephantFenceMap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/elephantLocationMap.styl" />
-    <entry file="file://$PROJECT_DIR$/routes/savefuntion.js">
+    <entry file="file://$PROJECT_DIR$/views/viewRequest.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/Home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/makeRequest.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3475">
+          <caret line="139" column="124" lean-forward="false" selection-start-line="139" selection-start-column="119" selection-end-line="139" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8098">
+          <caret line="947" column="0" lean-forward="false" selection-start-line="947" selection-start-column="0" selection-end-line="947" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/Connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="102" column="27" lean-forward="false" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/Parser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1975">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="177">
+          <caret line="78" column="36" lean-forward="false" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Asset.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/user/css/user.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="238" column="0" lean-forward="false" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/elephant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/androidLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/elephantLocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/fenceLocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1875">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/onlyView.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/onlyView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="125" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="151" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="400">
+          <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/elephant.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/uploadAudio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/uploadImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/download.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/onlyView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/makeRequest.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4000">
+          <caret line="160" column="43" lean-forward="false" selection-start-line="160" selection-start-column="43" selection-end-line="160" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/viewRequest.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="156" column="87" lean-forward="false" selection-start-line="156" selection-start-column="87" selection-end-line="156" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="18" lean-forward="false" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/uploadImages.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/upload.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="60" column="79" lean-forward="false" selection-start-line="60" selection-start-column="79" selection-end-line="60" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/dbConnection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/elephantFenceMap.js">
+    <entry file="file://$PROJECT_DIR$/routes/getElephant&amp;FenceLocations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/mapObject.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="65" />
+        <state relative-caret-position="425">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/Protocol.js">
+    <entry file="file://$PROJECT_DIR$/models/queryA.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1498">
-          <caret line="209" column="15" lean-forward="false" selection-start-line="209" selection-start-column="15" selection-end-line="209" selection-end-column="15" />
+        <state relative-caret-position="1300">
+          <caret line="52" column="57" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1495">
+          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/signUp.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/elephantLocationMap.css">
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/databaseConnection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="975">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="35" />
+        <state relative-caret-position="500">
+          <caret line="65" column="14" lean-forward="false" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supun.js">
+    <entry file="file://$PROJECT_DIR$/routes/elephant.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="325">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/fence.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/elephantFenceMap.ejs">
+    <entry file="file://$PROJECT_DIR$/views/fence.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="100">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantFenceMap.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/fence.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#location#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#calcRoute#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="e#1426#2975#0" expanded="false" />
-            <element signature="n#!!block;n#getFenceData#0;n#!!block;n#initMap#0" expanded="false" />
-            <element signature="n#!!block;n#addMarker#0" expanded="false" />
-            <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/elephantLocations.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="1908">
+          <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/elephantLocations.js">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/fence.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="77" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="77" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#calcRoute#0" expanded="false" />
-            <element signature="n#!!block;n#getFenceData#0" expanded="false" />
-            <element signature="n#!!block;n#addMarker#0" expanded="false" />
-            <element signature="n#!!block;n#getElephantLocation#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

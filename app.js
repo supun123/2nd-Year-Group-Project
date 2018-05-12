@@ -4,14 +4,26 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var supun=require('./supun');
-var index = require('./routes/index');
-var users = require('./routes/users');
-var elephantFenceMap = require('./routes/elephantFenceMap');
-var mapObject=require('./routes/mapObject');
-var elephantLocations=require('./routes/routesElephantsLocations');
-var app = express();
 
+var expressValidator=require('express-validator');
+var session=require('express-session');
+var passport = require('passport');
+var strategy = require('passport-local').Strategy;
+var mySQLStore = require('express-mysql-session')(session);
+var users = require('./models/users');
+
+var index = require('./routes/index');
+var upload = require('./routes/upload');
+var download = require('./routes/download');
+var elephantFenceMap = require('./routes/elephant');
+var fence=require('./routes/fence');
+var onlyView=require('./routes/onlyView');
+var getElephantFenceLocation=require('./routes/getElephant&FenceLocations');
+var home=require('./routes/home');
+var user=require('./routes/user');
+var request=require('./routes/request');
+var androidLogin=require('./routes/androidLogin');
+var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,56 +34,63 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));//##########################
+app.use(expressValidator());
 
-//supun.supun(kavinda.s[0].x);
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+//Session storing configuration
+var sessionStore = new mySQLStore({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'mydb'
+});
+
+//Setting up session
+app.use(session({
+    secret: 'no One i mean no one',
+    store: sessionStore,
+    resave: false,
+    saveUninitialized: false,
+}));
+
+//Passport initialization
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(function (req,res,next) {
+
+    res.locals.isAuthenticated=req.isAuthenticated();
+    if(req.isAuthenticated()){
+        res.locals.username=req.user.username;
+    }
+
+    next();
+});
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/upload', upload);
+app.use('/download', download);
+app.use('/elephant',elephantFenceMap);
+app.use('/fence',fence);
+app.use('/onlyView',onlyView);
+app.use('/getElephantFenceLocations',getElephantFenceLocation);
+app.use('/home',home);
+app.use('/user',user);
+app.use('/request',request);
+app.use('/androidLogin',androidLogin);
 
-app.use('/elephantFenceMap',elephantFenceMap);
-app.use('/mapObject',mapObject);
-app.use('/elephantLocations',elephantLocations);
+//Setting up passport strategy for logging
+passport.use(new strategy(function(username, password, done){
+    users.signIn(username, password, function(rslt, userid, role){
+        if(rslt){
+            return done(null, {userid: userid, role: role,username:username})
+        }
+        else{
+            return done(null, false);
+        }
+    })
+}));
 
-var query= require('./query.js');
-
-app.post('/fenceLocation',function (req,res) {
-
-    console.log("xxxx :",req.body);
-    var x=req.body;
-    query.data.addLocationOfFence(x);
-
-
-} );
-app.post('/allElephentLocations',function (req,res) {
-
-    console.log("allElephentLocations :",req.body);
-    var x=req.body;
-    query.data.addElephantLocation(x);
-
-
-} );
-//get data from elephant table
-app.get('/getElephanLocations',function (req,res) {
-    //due to asynchronous running javascript in nodejs i could not add sql query to query file
-    var con=query.data.getLocations();
-    con.query("SELECT `*` FROM `elephant`",function callback(err, result, fields) {
-        if (err) throw err;
-        console.log(result);
-        res.send(JSON.stringify(result) );
-    });
-});
-//get data from fence location from location table
-app.get('/getFenceLocation',function (req,res) {
-    //due to asynchronous running javascript in nodejs i could not add sql query to query file
-    var con=query.data.getLocations();
-    con.query("SELECT `x1`, `x2`, `y1`, `y2` FROM `locations`",function callback(err, result, fields) {
-        if (err) throw err;
-        console.log(result);
-        res.send(JSON.stringify(result) );
-    });
-});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

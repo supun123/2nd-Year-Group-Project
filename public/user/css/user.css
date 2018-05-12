@@ -1,0 +1,42 @@
+.containerB{
+    
+    float: left;
+    width: 50%;
+    border-radius: 14px;
+    background: white;
+    margin-top: 35px;
+    margin-right:10px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    opacity:0.95;
+}
+#googleMap{
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 14px;
+
+    width:48%;
+    height:500px;
+}
+.main-sidebara{
+    position: fixed;
+}
+.main-header{
+    position: fixed;
+}
+#abc{
+    position: fixed;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
