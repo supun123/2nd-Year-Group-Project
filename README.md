@@ -16,6 +16,7 @@ Objectives and Goals
 • To provide a sound library for the researchers to analyze
 
 Scope
+
 The proposed system will implement a software solution to support the research project conducted by SCoRe lab of UCSC. It will also give the benefit of reducing the cost of collecting, managing and maintaining information manually since it requires lot of resources as well as time. Following is a high-level summary of system functionality.
 
 • Storing and managing the data gathered
