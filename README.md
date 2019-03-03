@@ -6,9 +6,13 @@ ASSET research project carried out by the SCoRe lab of UCSC focuses on exploitin
 Objectives and Goals
 
 • To provide a centralized system to store data recorded from the mics and data related to elephant locations.
+
 • To make the registered users aware about the elephant locations
+
 • To assist in taking actions on fence breakages by identifying them as soon as possible.
+
 • To provide a mean of actively contributing to the course
+
 • To provide a sound library for the researchers to analyze
 
 Scope
